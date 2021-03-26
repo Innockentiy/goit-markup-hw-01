@@ -1,0 +1,305 @@
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --logo-color: #000000;
+  --text-color: #757575;
+  --main-background-color: #e5e5e5;
+  --footer-background-color: #2f303a;
+  --background-button-color: #f5f4fa;
+  --background-header-color: #ffffff;
+  --white-text-background-color: rgba(255, 255, 255, 1);
+  --white-contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(238, 238, 238, 1);
+}
+
+/* Шрифты*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Прячем заголовок*/
+.main-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Убираем маркеры списков */
+ul {
+  list-style-type: none;
+}
+
+/* Цвет фона хэдэра */
+.header {
+  background-color: var(--white-text-background-color);
+}
+
+/* Логотип*/
+.logo {
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+/* Фокусим цветом логотип при наведении  */
+.logo:focus {
+  color: var(--second-color);
+}
+
+/* Цветная часть логотипа */
+.logo-item {
+  color: var(--second-color);
+}
+
+/* Навигация*/
+.nav-list .link {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Ховверим и фокусим все ссылки меню, при наведении курсора */
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--second-color);
+}
+
+/* Показываем на какой мы сейчам активной странице меню */
+.nav-list .link-current {
+  color: var(--second-color);
+}
+
+/* Контакты */
+.contacts-list .link {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Ховерим и фокусим контакты, при наведении курсора */
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--second-color);
+}
+
+/* Герой */
+.hero-title {
+  color: var(--white-text-background-color);
+  background-color: #2f303a;
+  font-family: inherit;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+/* Ссылка героя */
+.hero-link {
+  color: var(--white-text-background-color);
+  background-color: var(--second-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Ховерим и фокусим цвет ссылки героя */
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--main-color);
+}
+
+/* Заголовок  */
+.different-title {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Абзацы секции с особеностями */
+.different-text {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*  */
+.works-title {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/*  */
+.team-section {
+  background-color: var(--main-background-color);
+}
+
+/* Наша команда */
+.team-section-title {
+  color: var(--main-color);
+  background-color: var(--section-team-background-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* Состав команды */
+.section-list-title {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+/* Должности */
+.section-list-text {
+  color: var(--text-colorcolor);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+
+/* Лого футера */
+.footer-logo {
+  color: var(--white-text-background-color);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+/* Выдяляем курсором футер */
+.footer-logo:focus {
+  color: var(--second-color);
+}
+
+/* асть цвета логотипа */
+.logo-item {
+  color: var(--second-color);
+}
+
+/* Адрес */
+.address-text {
+  color: var(--white-text-background-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ссылки футера */
+.contacts-list-item {
+  color: var(--white-contacts-color);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Ховерим и фокусим ссылки футера */
+.contacts-list-item:hover,
+.contacts-list-item:focus {
+  color: var(--second-color);
+}
+
+/* Стили кнопок */
+.btn {
+  background-color: var(--section-team-background-color);
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Ховерим и фокусим кнопки */
+.btn:hover,
+.btn:focus {
+  color: var(--second-color);
+}
+
+/* Границы проэктов */
+.project-item {
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 1px;
+}
+
+/* Стилизация подписей проэктов */
+.project-title {
+  color: var(--main-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.project-paragraph {
+  color: var(--text-color);
+  background-color: var(--white-text-background-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
